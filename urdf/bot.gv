@@ -1,0 +1,17 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"base_2" [label="base_2"];
+"base_head" [label="base_head"];
+"upper_arm" [label="upper_arm"];
+"lower_arm" [label="lower_arm"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "base_link_to_base_2_linear" [label="xyz: 0 0 0.6 \nrpy: 0 -0 0"]
+"base_link_to_base_2_linear" -> "base_2"
+"base_2" -> "base_2_to_base_head" [label="xyz: 0 0 0.28 \nrpy: 0 -0 0"]
+"base_2_to_base_head" -> "base_head"
+"base_head" -> "base_head_to_upper_arm" [label="xyz: 0.32 0 0 \nrpy: 0 -0 3.14"]
+"base_head_to_upper_arm" -> "upper_arm"
+"upper_arm" -> "upper_arm_to_lower_arm" [label="xyz: 0 1.05 0 \nrpy: 0 -0 0"]
+"upper_arm_to_lower_arm" -> "lower_arm"
+}
