@@ -1,6 +1,6 @@
 <launch>
     <arg name="model" default="$(find first_robot)/urdf/structure.urdf"/>
-<!--    <arg name="gui" default="false"/>-->
+<!--    <arg name="gui" default="True"/>-->
     <arg name="rvizconfig" default="$(find first_robot)/rviz/urdf.rviz"/>
 
     <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />

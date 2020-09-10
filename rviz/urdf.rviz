@@ -32,7 +32,7 @@ Panels:
 Visualization Manager:
   Class: ""
   Displays:
-    - Alpha: 1.0
+    - Alpha: 0.5
       Cell Size: 1
       Class: rviz/Grid
       Color: 160; 160; 164
@@ -50,7 +50,7 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 0.5
+    - Alpha: 1.0
       Class: rviz/RobotModel
       Collision Enabled: false
       Enabled: true
@@ -80,7 +80,7 @@ Visualization Manager:
       Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
         base_link:
           Value: true
         right_leg:
